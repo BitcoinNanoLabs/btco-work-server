@@ -1,4 +1,4 @@
-# btco work server
+## btco work server
 ./root/btco-work-server/target/release/btco-work-server  --gpu 0:0:1024 --gpu-local-work-size 16 --listen-address 192.168.1.140:7070
 ![Build](https://github.com/bitcoinnanolabs/btco-work-server/workflows/Build/badge.svg)
 
