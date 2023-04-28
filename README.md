@@ -1,8 +1,14 @@
-## btco work server
-./root/btco-work-server/target/release/btco-work-server  --gpu 0:0:1024 --gpu-local-work-size 16 --listen-address 192.168.1.140:7070
 ![Build](https://github.com/bitcoinnanolabs/btco-work-server/workflows/Build/badge.svg)
-
-This project is a dedicated work server for [the btco cryptocurrency](https://btco.org/). See the [documentation](https://docs.btco.org/integration-guides/work-generation/) for details on work generation and the current network difficulty.
+## run btco work server
+```
+./btco-work-server  --gpu 0:0:1024 --gpu-local-work-size 16 --listen-address 127.0.0.1:7076
+```
+details on work generation and the current network difficulty.
+```
+LIVE_DIFFICULTY: u64 = 0xffc0000000000000;
+LIVE_RECEIVE_DIFFICULTY: u64 = 0xf000000000000000;
+```
+This project is a dedicated work server for [the btco cryptocurrency](https://bitcoinnano.org/).
 
 **btco-work-server** supports the `work_generate`, `work_cancel`, and `work_validate` commands from the btco RPC.
 For details on these commands, see [the btco RPC documentation](https://docs.btco.org/commands/rpc-protocol/).
@@ -13,7 +19,7 @@ If using more than one work peer, give the flag `--shuffle`. This makes it so th
 
 ## Current base difficulty
 
-`0xfffffff800000000` since [a75d984](https://github.com/bitcoinnanolabs/btco-work-server/commit/a75d98429a11fcb0c129a55380996a612299917b). See the [btco work generation guide](https://docs.btco.org/integration-guides/work-generation/#difficulty-thresholds) for more information.
+`0xffc0000000000000` 
 
 ## Installation
 
