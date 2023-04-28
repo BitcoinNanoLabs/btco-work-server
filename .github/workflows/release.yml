@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Install OpenCL
         run: |
-          sudo add-apt-repository ppa:intel-opencl/intel-opencl
           sudo apt-get update
           sudo apt-get install ocl-icd-opencl-dev
       - uses: actions/checkout@aabbfeb2ce60b5bd82389903509092c4648a9713
